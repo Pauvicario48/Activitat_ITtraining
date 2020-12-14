@@ -1,6 +1,9 @@
 let arrRespostes = [], arrRespostesCorrectes = [];
 arrRespostesCorrectes = [1, 3, 4, 2];
+
+
 function pregunta1(objecte, pregNum) {
+
     let resposta;
     let pregunta;
     console.log("pos = 0 " + objecte.form[0].checked);
@@ -13,18 +16,28 @@ function pregunta1(objecte, pregNum) {
         }
     }
     arrRespostes[pregNum] = resposta;
+
     alert("Has escollit resposta" + arrRespostes[pregNum]);
+   
     switch (pregNum) {
         case 0:
+
             pregunta = document.getElementById("pregunta1");
             pregunta.classList.remove("elementVisible");
             pregunta.classList.add("elementOcult");
+
             pregunta = document.getElementById("pregunta2");
             pregunta.classList.remove("elementVisible");
             pregunta.classList.add("elementVisible");
             break;
+
         case 1:
-            alert("AAAAAAAAAAAA");
+            alert("Hola");
             break;
+
+
     }
+
+
+
 }
